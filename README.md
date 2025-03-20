@@ -3,7 +3,9 @@
 🚀 **A social media platform built using HTML, CSS, and JavaScript**  
 
 ## 📖 About the Project  
-Crowd is a **lightweight social media application** that allows users to **post, like, and interact with content**.  
+Crowd is a **user-friendly web application** that allows users to **customize their browsing experience** by adjusting **font color, font size, and background color**. Designed with a simple and interactive UI, this project provides a seamless way to personalize content visibility while maintaining a responsive layout.   
+
+## 🛠 Tech Stack  
 
 ## 🛠 Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript  
