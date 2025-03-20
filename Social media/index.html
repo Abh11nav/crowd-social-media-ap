@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROWD - Responsive Social Media Website</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/8105/8105166.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                CROWD
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="search for creators, inspirations, and projects">
+            </div>
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">create</label>
+                <div class="profile-photo">
+                    <img src="https://lens-storage.storage.googleapis.com/png/5f1bcc80-0140-41da-8787-4f5c1a354418"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="left">
+                <a class="profile">
+                    <div class="profile-photo">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5CoQkkuf2dI2qIoKJbgiOwyybMRx1AfdrHA&usqp=CAU">
+                    </div>
+                    <div class="handle">
+                        <h4>Sonam Bajawa</h4>
+                        <p class="text-muted">
+                            @sbajwa
+                        </p>
+                    </div>
+                </a>
+
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span><i class="uil uil-home"></i></span>
+                        <h3>Home</h3>
+                    </a>
+                    <a class="menu-item">
+
+                        <span><i class="uil uil-compass"></i></span>
+                        <h3>Explore</h3>
+                    </a>
+                    <a class="menu-item" id="Notifications">
+
+
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
+                        <h3>Notifications</h3>
+
+                        <div class="notifications-popup">
+                            <div>
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://lens-storage.storage.googleapis.com/png/aee3bd1c-e256-4331-8f72-5239c75aa6c9">
+                                </div>
+                                <div class="notification-body">
+                                    <b>shreya tiwari</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-YqYXNvvBDxhYZ8FkppYWfaTlebN_LFp3A&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Arham Zia </b> commented on your post
+                                    <small class="text-muted">1 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvcc5nHfwxFdGzI4lenAKBqNt5TqJ8Eb_zZg&usqp=CAU">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Aditya Choudhary </b>
+                                    accepted your friend request
+                                    <small class="text-muted">1 hour AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://wallpapers.com/images/hd/girl-with-cap-instagram-profile-7mx0n7tdzshfmbxc.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Aditi Dubey </b>
+                                    Likes your post
+                                    <small class="text-muted">3hour AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://marketplace.canva.com/EAFSZhFumYM/1/0/1600w/canva-dark-red-neon-futuristic-instagram-profile-picture-MUPA4np8in0.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Adarsh Dubey </b>
+                                    Likes your post
+                                    <small class="text-muted">8 hour AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-photo">
+                                    <img src="https://i.pinimg.com/736x/a9/62/d4/a962d427ef703dc1351064f9cddaa6e1.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Kavita Shukla </b>
+                                    Likes your post
+                                    <small class="text-muted">4 hour AGO</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a>
+                    <a class="menu-item" id="messages-notification">
+
+
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span>
+                        <h3>Message</h3>
+                    </a>
+                    <a class="menu-item">
+
+
+                        <span><i class="uil uil-bookmark"></i></span>
+                        <h3>Bookmarks</h3>
+                    </a>
+                    <a class="menu-item">
+
+
+                        <span><i class="uil uil-chart-line"></i></span>
+                        <h3>Analytics</h3>
+                    </a>
+                    <a class="menu-item" id="theme">
+
+
+                        <span><i class="uil uil-palette"></i></span>
+                        <h3>Theme</h3>
+                    </a>
+                    <a class="menu-item ">
+
+
+
+                        <span><i class="uil uil-setting"></i></span>
+                        <h3>Settings</h3>
+                    </a>
+                </div>
+                <label for="created-post" class="btn btn-primary">Create Post</label>
+
+
+            </div>
+
+
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img
+                                src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/instagram-profile-photo-maker/HEADER.webp">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+                        </div>
+                        <p class="name">Shashank Kori</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img
+                                src="https://png.pngtree.com/png-clipart/20220322/ourmid/pngtree-d-render-male-avatar-with-blue-sweater-good-for-profile-picture-png-image_4506784.png">
+                        </div>
+                        <p class="name">Aditya Choudhary</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img
+                                src="https://png.pngtree.com/png-clipart/20220327/ourmid/pngtree-d-rendering-male-character-profile-with-cream-hat-and-orange-polo-png-image_4516514.png">
+                        </div>
+                        <p class="name">Arham Zia</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img
+                                src="https://img.freepik.com/premium-vector/happy-smiling-young-man-avatar-3d-portrait-man-cartoon-character-people-vector-illustration_653240-187.jpg">
+                        </div>
+                        <p class="name">Aditya Kumar</p>
+                    </div>
+
+
+
+                </div>
+                <form class="create-post">
+                    <div class="profile-photo">
+                        <img
+                            src="https://feeds.abplive.com/onecms/images/uploaded-images/2023/07/05/5d8467ec1925c90e5370861a7470d892dbdab.png?impolicy=abp_cdn&imwidth=650">
+                    </div>
+                    <input type="text" placeholder="What's on your mind, Diama?" id="create-post">
+                    <input type="submit" value="Post" class="btn btn-primary">
+                </form>
+
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img
+                                        src="https://static.toiimg.com/photo/89411375/Punjabi-actress-Sonam-Bajwa-is-ruling-social-media-with-her-scintillating-pictures-.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Sonam Bajwa</h3>
+                                    <small>Punjab, 15 MINUTES AGO</small>
+                                </div>
+
+                                <span class="edit">
+                                    <i class="uil uil-ellipsis-h"></i>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div class="photo">
+                            <img src="https://static.toiimg.com/thumb/95214539.cms?resizemode=4&width=1200&height=900">
+                        </div>
+
+                        <div class="action-buttons">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil u il-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img
+                                    src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png"></span>
+                            <span><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                            <span><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                            <p>Liked by <b>Aditya Choudhary</b> and <b>2,323 others</b> </p>
+                        </div>
+
+                        
+                        <div class="caption">
+                            <p><b>Sonam Bajwa</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi,
+                                fuga <span class="harsh-tag">#Lifestyle</span></p>
+                        </div>
+                        <div class=" comments text-muted">
+                            View all 227 comments
+                        </div>
+                        <div class="feed">
+                            <div class="head">
+                                <div class="user">
+                                    <div class="profile-photo">
+                                        <img
+                                            src="https://yt3.googleusercontent.com/XVVi44_WFTkdPXYorOffTEJ51xPacaBdx_-peDEao52ZHF8DdfuJz76IZLQI3hNwulwnHrBHIQ=s900-c-k-c0x00ffffff-no-rj">
+                                    </div>
+                                    <div class="ingo">
+                                        <h3>Kapil Sharma</h3>
+                                        <small>Mumbai, 37 MINUTES AGO</small>
+                                    </div>
+
+                                    <span class="edit">
+                                        <i class="uil uil-ellipsis-h"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="photo">
+                                <img
+                                    src="https://feeds.abplive.com/onecms/images/uploaded-images/2022/12/15/02c483f6aa7f6b84790bba9282a9148a1671121888426612_original.jpg?impolicy=abp_cdn&imwidth=650">
+                            </div>
+
+                            <div class="action-buttons">
+                                <div class="interaction-buttons">
+                                    <span><i class="uil uil-heart"></i></span>
+                                    <span><i class="uil u il-comment-dots"></i></span>
+                                    <span><i class="uil uil-share-alt"></i></span>
+                                </div>
+                                <div class="bookmark">
+                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="liked-by">
+                                <span><img
+                                        src="https://yt3.googleusercontent.com/XVVi44_WFTkdPXYorOffTEJ51xPacaBdx_-peDEao52ZHF8DdfuJz76IZLQI3hNwulwnHrBHIQ=s900-c-k-c0x00ffffff-no-rj"></span>
+                                <span><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                                <span><img
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                                <p>Liked by <b>Arham Zia</b> and <b>2,323 others</b> </p>
+                            </div>
+                            <div class="caption">
+                                <p><b>Kapil Sharma</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Commodi,
+                                    fuga <span class="harsh-tag">#tkss</span></p>
+                            </div>
+                            <div class=" comments text-muted">
+                                View all 227 comments
+                            </div>
+                            <div class="feed">
+                                <div class="head">
+                                    <div class="user">
+                                        <div class="profile-photo">
+                                            <img
+                                                src="https://www.bollywoodhungama.com/wp-content/uploads/2016/03/Pankaj-Tripathi1.jpg">
+                                        </div>
+                                        <div class="ingo">
+                                            <h3>Pankaj-Tripathi</h3>
+                                            <small>Mumbai, 1 HOURS AGO</small>
+
+                                        </div>
+                                        <span class="edit">
+                                            <i class="uil uil-ellipsis-h"></i>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="photo">
+                                    <img src="https://sm.mashable.com/mashable_in/seo/default/image-21_bbzb.jpg">
+                                </div>
+
+                                <div class="action-buttons">
+                                    <div class="interaction-buttons">
+                                        <span><i class="uil uil-heart"></i></span>
+                                        <span><i class="uil u il-comment-dots"></i></span>
+                                        <span><i class="uil uil-share-alt"></i></span>
+                                    </div>
+                                    <div class="bookmark">
+                                        <span><i class="uil uil-bookmark-full"></i></span>
+                                    </div>
+                                </div>
+
+                                <div class="liked-by">
+                                    <span><img
+                                            src="https://www.bollywoodhungama.com/wp-content/uploads/2016/03/Pankaj-Tripathi1.jpg"></span>
+                                    <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                                    <span><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                                    <p>Liked by <b>Aditya Kumar</b> and <b>2,323 others</b> </p>
+                                </div>
+
+                                <div class="caption">
+                                    <p><b>Pankaj-Tripathi</b> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                        Commodi,
+                                        fuga <span class="harsh-tag">#Lifestyle</span></p>
+                                </div>
+                                <div class=" comments text-muted">
+                                    View all 12,00,000 comments
+                                </div>
+                                <div class="feed">
+                                    <div class="head">
+                                        <div class="user">
+                                            <div class="profile-photo">
+                                                <img
+                                                    src="https://upload.wikimedia.org/wikipedia/commons/7/75/Manoj_Bajpai_at_52nd_IFFI.jpg">
+                                            </div>
+                                            <div class="ingo">
+                                                <h3>Manoj Bajpayee</h3>
+                                                <small>Bihar, 56 MINUTES AGO</small>
+                                            </div>
+
+                                            <span class="edit">
+                                                <i class="uil uil-ellipsis-h"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="photo">
+                                        <img
+                                            src="https://www.bollywoodhungama.com/wp-content/uploads/2020/12/Manoj-Bajpayee1.jpg">
+                                    </div>
+
+                                    <div class="action-buttons">
+                                        <div class="interaction-buttons">
+                                            <span><i class="uil uil-heart"></i></span>
+                                            <span><i class="uil u il-comment-dots"></i></span>
+                                            <span><i class="uil uil-share-alt"></i></span>
+                                        </div>
+                                        <div class="bookmark">
+                                            <span><i class="uil uil-bookmark-full"></i></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="liked-by">
+                                        <span><img
+                                                src="https://upload.wikimedia.org/wikipedia/commons/7/75/Manoj_Bajpai_at_52nd_IFFI.jpg"></span>
+                                        <span><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                                        <span><img
+                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                                        <p>Liked by <b>Arpit Rawat</b> and <b>2,323 others</b> </p>
+                                    </div>
+
+                                    <div class="caption">
+                                        <p><b>Manoj-Bajpayee</b> Lorem ipsum dolor sit, amet consectetur adipisicing
+                                            elit. Commodi,
+                                            fuga <span class="harsh-tag">#Lifestyle</span></p>
+                                    </div>
+                                    <div class=" comments text-muted">
+                                        View all 227 comments
+                                    </div>
+                                    <div class="feed">
+                                        <div class="head">
+                                            <div class="user">
+                                                <div class="profile-photo">
+                                                    <img
+                                                        src="https://th-i.thgim.com/public/entertainment/cluzfk/article28795315.ece/alternates/FREE_1200/01dmcbassi2">
+                                                </div>
+                                                <div class="ingo">
+                                                    <h3>Anubhav Singh Bassi</h3>
+                                                    <small>NCR, 8 HOURS AGO</small>
+                                                </div>
+
+                                                <span class="edit">
+                                                    <i class="uil uil-ellipsis-h"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="photo">
+                                            <img
+                                                src="https://starsunfolded.com/wp-content/uploads/2020/08/Anubhav-Singh-Bassi.jpg">
+                                        </div>
+
+                                        <div class="action-buttons">
+                                            <div class="interaction-buttons">
+                                                <span><i class="uil uil-heart"></i></span>
+                                                <span><i class="uil u il-comment-dots"></i></span>
+                                                <span><i class="uil uil-share-alt"></i></span>
+                                            </div>
+                                            <div class="bookmark">
+                                                <span><i class="uil uil-bookmark-full"></i></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="liked-by">
+                                            <span><img
+                                                    src="https://th-i.thgim.com/public/entertainment/cluzfk/article28795315.ece/alternates/FREE_1200/01dmcbassi2"></span>
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                                            <span><img
+                                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                                            <p>Liked by <b>Abhishek Singh</b> and <b>2,323 others</b> </p>
+                                        </div>
+
+                                        <div class="caption">
+                                            <p><b>Anubhav Singh Bassi</b> Lorem ipsum dolor sit, amet consectetur
+                                                adipisicing elit. Commodi,
+                                                fuga <span class="harsh-tag">#Lifestyle</span></p>
+                                        </div>
+                                        <div class=" comments text-muted">
+                                            View all 227 comments
+                                        </div>
+                                        <div class="feed">
+                                            <div class="head">
+                                                <div class="user">
+                                                    <div class="profile-photo">
+                                                        <img
+                                                            src="https://i.scdn.co/image/ab6761610000e5eb2f0fac98cd33bf8f0d541f22">
+                                                    </div>
+                                                    <div class="ingo">
+                                                        <h3>Jaya Kishori</h3>
+                                                        <small>UP, 1 MINUTES AGO</small>
+                                                    </div>
+
+                                                    <span class="edit">
+                                                        <i class="uil uil-ellipsis-h"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="photo">
+                                                <img
+                                                    src="https://akm-img-a-in.tosshub.com/sites/visualstory/stories/2023_06/story_45102/assets/11.jpeg?time=1687777229">
+                                            </div>
+
+                                            <div class="action-buttons">
+                                                <div class="interaction-buttons">
+                                                    <span><i class="uil uil-heart"></i></span>
+                                                    <span><i class="uil u il-comment-dots"></i></span>
+                                                    <span><i class="uil uil-share-alt"></i></span>
+                                                </div>
+                                                <div class="bookmark">
+                                                    <span><i class="uil uil-bookmark-full"></i></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="liked-by">
+                                                <span><img
+                                                        src="https://i.scdn.co/image/ab6761610000e5eb2f0fac98cd33bf8f0d541f22"></span>
+                                                <span><img
+                                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                                                <span><img
+                                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                                                <p>Liked by <b>Abhinav</b> and <b>2,323 others</b> </p>
+                                            </div>
+
+                                            <div class="caption">
+                                                <p><b>Jaya Kishori</b> Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Commodi,
+                                                    fuga <span class="harsh-tag">#Lifestyle</span></p>
+                                            </div>
+                                            <div class=" comments text-muted">
+                                                View all 300 comments
+                                            </div>
+                                            <div class="feed">
+                                                <div class="head">
+                                                    <div class="user">
+                                                        <div class="profile-photo">
+                                                            <img
+                                                                src="https://img.mensxp.com/media/content/2022/Nov/Look1_637883bd647fa.jpeg">
+                                                        </div>
+                                                        <div class="ingo">
+                                                            <h3>Zakir Khan</h3>
+                                                            <small>Indore, 12 MINUTES AGO</small>
+                                                        </div>
+
+                                                        <span class="edit">
+                                                            <i class="uil uil-ellipsis-h"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="photo">
+                                                    <img
+                                                        src="https://www.themoviedb.org/t/p/w500/eKhj8gb45jNDOG9Gpv4l7wZZ2dW.jpg">
+                                                </div>
+
+                                                <div class="action-buttons">
+                                                    <div class="interaction-buttons">
+                                                        <span><i class="uil uil-heart"></i></span>
+                                                        <span><i class="uil u il-comment-dots"></i></span>
+                                                        <span><i class="uil uil-share-alt"></i></span>
+                                                    </div>
+                                                    <div class="bookmark">
+                                                        <span><i class="uil uil-bookmark-full"></i></span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="liked-by">
+                                                    <span><img
+                                                            src="https://img.mensxp.com/media/content/2022/Nov/Look1_637883bd647fa.jpeg"></span>
+                                                    <span><img
+                                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYZeZ2LduOmysSwgiQSnETsu_e82DkgEPI8HOghsnd3DLUDLbWe4od5a-6FN6otW8mjY&usqp=CAU"></span>
+                                                    <span><img
+                                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB1HnswP3WY0jPKwcFoWd0B6dtqTzfdMMorGSyAtaXunnt8-8LHKlqja5MnxvvEd6yQFE&usqp=CAU"></span>
+                                                    <p>Liked by <b>Aditya Choudhary</b> and <b>2,323 others</b> </p>
+                                                </div>
+
+                                                <div class="caption">
+                                                    <p><b>Zakir Khan</b> Lorem ipsum dolor sit, amet consectetur
+                                                        adipisicing elit. Commodi,
+                                                        fuga <span class="harsh-tag">#Lifestyle</span></p>
+                                                </div>
+                                                <div class=" comments text-muted">
+                                                    View all 227 comments
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--------------- END------------------------ -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!--------------- right------------------------ -->
+
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4><i class="uil uil-edit"></i>
+                    </div>
+
+                    <!-- search bar -->
+
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search messages" id="message-search">
+                    </div>
+
+
+                    <!-- message category -->
+
+
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="message-requests">Requests(7)</h6>
+                    </div>
+
+                    <!------ message------->
+
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="https://images.news18.com/ibnlive/uploads/2022/09/harsh-1.jpg">
+
+                        </div>
+                        <div class="message-body">
+                            <h5>Harsh Beniwal</h5>
+                            <p class="text-muted">Just woke up bruh</p>
+                        </div>
+                    </div>
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img
+                                src="https://yt3.googleusercontent.com/ytc/AOPolaSlK6ODxfbP7_YOAGGh_xBNfA3WLKhwrTxx6vLXmA=s900-c-k-c0x00ffffff-no-rj">
+                            <div class="active"></div>
+
+                        </div>
+                        <div class="message-body">
+                            <h5>Harsh Gujral</h5>
+                            <p class="text-muted">#comdey</p>
+                        </div>
+                    </div>
+
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img
+                                src="https://www.ucl.ac.uk/culture/sites/culture/files/styles/large_image/public/aakash_0.jpg?itok=p8ST-gtx">
+
+                        </div>
+                        <div class="message-body">
+                            <h5>Akash Gupta</h5>
+                            <p class="text-muted">Good Morning </p>
+                        </div>
+                    </div>
+
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img
+                                src="https://yt3.googleusercontent.com/ytc/AOPolaQ-e9JmPkM2y8nLylcnP0pZ8SWqcwjRnarsRL77fA=s900-c-k-c0x00ffffff-no-rj">
+
+                        </div>
+                        <div class="message-body">
+                            <h5>Zakir Khan</h5>
+                            <p class="text-muted">#Saktalunda</p>
+                        </div>
+                    </div>
+
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img
+                                src="https://www.aljazeera.com/wp-content/uploads/2023/05/AP23130567817751-1685272095.jpg?resize=1800%2C1800">
+
+                        </div>
+                        <div class="message-body">
+                            <h5>Mahendra singh dhoni</h5>
+                            <p class="text-muted">#helicopter shot</p>
+                        </div>
+                    </div>
+
+
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/JohnnyLever.jpg">
+                            <div class="active"></div>
+
+                        </div>
+                        <div class="message-body">
+                            <h5>jonny lever</h5>
+                            <p class="text-muted">Birthday tommrow</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- End OF mESSAGES -->
+
+
+
+
+                <!-- Friend Request -->
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThJMk7CDPEtlVD6WR-Uhlp8zGjuYG0_fA4w&usqp=CAU">
+
+                            </div>
+
+                            <div>
+                                <h5>Carryminati</h5>
+                                <p class="text-muted">8 mutual friends
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mike_Tyson_2019_by_Glenn_Francis.jpg/1200px-Mike_Tyson_2019_by_Glenn_Francis.jpg">
+
+                            </div>
+
+                            <div>
+                                <h5>Mike Tyson</h5>
+                                <p class="text-muted">3 mutual friends
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="https://cdn.britannica.com/86/192386-050-D7F3126D/Muhammad-Ali-American.jpg">
+
+                            </div>
+
+                            <div>
+                                <h5>muhammad ali</h5>
+                                <p class="text-muted">8 mutual friends
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <!-------------- theme customization--------- -->
+
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text">Manage your font size, color, and background.</p>
+
+            <!---------- font size------------ -->
+
+            <div class="font-size">
+
+                <h4>Font size</h4>
+
+                <div>
+                    <h6>Aa</h6>
+
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+
+            <!------------ primary color---------- -->
+
+            <h4>Color</h4>
+            <div class="choose-color">
+                <span class="color-1 active"></span>
+                <span class="color-2"></span>
+                <span class="color-3"></span>
+                <span class="color-4"></span>
+                <span class="color-5"></span>
+            </div>
+            <div class="color">
+
+                <!------------ background Color -------->
+
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg-1 active">
+                            <span></span>
+                            <h5 for="bg-1">Light</h5>
+                        </div>
+                        <div class="bg-2">
+                            <span></span>
+                            <h5>Dim</h5>
+                        </div>
+                        <div class="bg-3">
+                            <span></span>
+                            <h for="bg-3">Lights Out</h5>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
